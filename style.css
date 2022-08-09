@@ -8,7 +8,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 input {
@@ -28,8 +28,8 @@ input {
 }
 
 .container {
-    max-width: 1500px;
-    height: 100%;
+    max-width: 75%;
+    min-height: 100vh;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -42,10 +42,9 @@ input {
     display: flex;
     flex-direction: column;
     background-image: url("./pictures/forest.jpg");
-    background-size: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    flex: 1 1 0;
+    background-size: cover;
+    background-position: center center;
+    flex: 1.4;
 }
 
 .right-side {
@@ -86,20 +85,15 @@ input {
 }
 
 .rs-top {
-    flex: 1 1 100px;
+    flex: 1 1 0;
     display: flex;
     flex-direction: column;
     background-color: #f9fafb; 
     padding-top: 160px;
     padding-bottom: 40px;
     padding-left: 40px;
-    font-size: 25px;
-}
-
-.rs-p p {
-    font-size: 25px;
-    padding-left: 40px;
-    text-align: left;
+    padding-right: 120px;
+    font-size: 1.4rem;
 }
 
 .rs-txt-form {
@@ -112,9 +106,13 @@ input {
 .form {
     border-bottom: 1px solid rgb(223, 217, 217);
     box-shadow: 5px 5px 8px rgba(0,0,0,0.2), -5px -2px 10px rgba(0,0,0,0.1);
-    padding-bottom: 100px;
+    padding-bottom: 15px;
     padding-top: 20px;
     padding-left: 40px
+}
+
+.form-p {
+    font-size: 1.4rem;
 }
 
 .form input {
@@ -129,6 +127,10 @@ input:focus {
     outline: none !important;
     border-color:rgb(10, 13, 159);
     box-shadow: 5px 6px 10px rgba(10, 13, 159, 0.3);
+}
+
+#lname {
+    border-color:rgb(10, 13, 159);
 }
 
 .first-input-group {
@@ -154,20 +156,26 @@ input:focus {
     margin: 20px 0;
 }
 
-.password:focus {
-    outline: none !important;
-    border-color:rgb(210, 15, 15);
+#password {
+    border: 1px solid rgb(210, 15, 15);
+}
+
+#repeat-password {
+    border: 1px solid rgb(210, 15, 15);
 }
 
 .error-msg {
-    display: none;
+    color:rgb(210, 15, 15);
+    margin:0 auto;
+    font-size: 0.8em;
 }
 
 button {
-    font-size: 1.5rem;
-    padding: 15px 80px;
-    margin: 20px 40px;
+    font-size: 1.2rem;
+    padding: 13px 45px;
+    margin: 30px 40px;
     border-radius: 10px;
+    border: none;
     background-color: rgb(89, 109, 72);
     color: #fff;
     cursor: pointer;
@@ -195,4 +203,18 @@ button:active {
 
 .log-in-a {
     color: rgb(68, 112, 31);
+}
+
+@media only screen and (max-width: 1300px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 915px) {
+    .container {
+        max-width: 100%;
+        display: flex;
+        flex-direction:column;
+    }
 }
