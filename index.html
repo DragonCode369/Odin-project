@@ -34,45 +34,47 @@
             <div class="rs-txt-form">
                
                 <div class="form">
-                        <p class="form-p">
-                            <b> Let's do this! </b>
-                        </p>
-                        <form action="#" method="post" id="form">
-                            <div class="first-input-group">
-                                <div>
-                                    <label for="fname">First name </label>
-                                    <input type="text" id="fname" name="fname" value="Thor">
+                        <form id="form">
+                            <div id="form-box">
+                                <p class="form-p">
+                                    <b> Let's do this! </b>
+                                </p>
+                                <div class="first-input-group">
+                                    <div>
+                                        <label for="fname">First name </label>
+                                        <input type="text" id="fname" name="fname" value="Thor" required>
+                                    </div>
+                                    <div>
+                                        <label for="lname">Last name </label>
+                                        <input type="text" id="lname" name="lname" value="Odinson" required>
+                                    </div>
                                 </div>
-                                <div>
-                                    <label for="lname">Last name </label>
-                                    <input type="text" id="lname" name="lname" value="Odinson">
+                                <div class="second-input-group">
+                                    <div>
+                                        <label for="email">Email </label>
+                                        <input type="email" id="email" name="email" required>
+                                    </div>
+                                    <div>
+                                        <label for="phone-number">Phone number </label>
+                                        <input type="number" id="phone-number" name="phone-number">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="second-input-group">
-                                <div>
-                                    <label for="email">Email </label>
-                                    <input type="email" id="email" name="email">
+                                <div class="third-input-group">
+                                    <div>
+                                        <label for="password">Passsword </label>
+                                        <input type="password" id="password" name="password" required>
+                                        <p class="error-msg">*Passwords do not match</p>
+                                    </div>
+                                    <div>
+                                        <label for="repeat-password">Repeat passsword </label>
+                                        <input type="password" id="repeat-password" name="repeat-password" required>
+                                    </div>
                                 </div>
-                                <div>
-                                    <label for="phone-number">Phone number </label>
-                                    <input type="number" id="phone-number" name="phone-number">
-                                </div>
-                            </div>
-                            <div class="third-input-group">
-                                <div>
-                                    <label for="password">Passsword </label>
-                                    <input type="password" id="password" name="password">
-                                    <p class="error-msg">*Passwords do not match</p>
-                                </div>
-                                <div>
-                                    <label for="repeat-password">Repeat passsword </label>
-                                    <input type="password" id="repeat-password" name="repeat-password">
-                                </div>
-                            </div>
+                            </div><!-- #form-box -->
+                            <input type="submit" value="Create Account" id="submit"/>
                         </form>
                 </div>   
             </div>
-            <button>Create Account</button>
             <p class="log-in">Already have an account? <a href="#" class="log-in-a">Log in</a></p>
         </div><!-- "right-side" -->
 
